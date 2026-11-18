@@ -1,0 +1,112 @@
+
+.page-heading h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+}
+
+.students {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.courses {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.semesters {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.enrollments {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.stat-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.stat-card h3 {
+  margin: 5px 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.stat-card small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.content-card {
+  background: #fff;
+  border: 1px solid #e8edf5;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+.content-card h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.content-card p {
+  font-size: 13px;
+}
+
+.overview-icon {
+  margin-top: 25px;
+  background: #eff6ff;
+  color: #2563eb;
+  width: 100%;
+  min-height: 130px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+}
+
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  color: #334155;
+  text-decoration: none;
+  font-size: 13px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.quick-action:hover {
+  color: #2563eb;
+}
+
+.quick-action > i:first-child {
+  font-size: 17px;
+}

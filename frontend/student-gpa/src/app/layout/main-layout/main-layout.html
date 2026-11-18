@@ -1,0 +1,91 @@
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="bi bi-mortarboard-fill"></i>
+      </div>
+      <div>
+        <h5>Student GPA</h5>
+        <small>Management System</small>
+      </div>
+    </div>
+
+    <div class="nav-section-title">MAIN MENU</div>
+
+    <nav class="nav flex-column">
+
+      <a routerLink="/dashboard"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a routerLink="/students"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-people"></i>
+        <span>Students</span>
+      </a>
+
+      <a routerLink="/courses"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-book"></i>
+        <span>Courses</span>
+      </a>
+
+      <a routerLink="/semesters"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-calendar3"></i>
+        <span>Semesters</span>
+      </a>
+
+      <a routerLink="/enrollments"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-journal-check"></i>
+        <span>Enrollments</span>
+      </a>
+
+      <a routerLink="/transcript"
+         routerLinkActive="active"
+         class="nav-link">
+        <i class="bi bi-mortarboard"></i>
+        <span>Student Transcript</span>
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <i class="bi bi-code-slash"></i>
+      <span>Student GPA System</span>
+    </div>
+
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h6>Academic Management</h6>
+        <small>Student GPA Management System</small>
+      </div>
+
+      <div class="topbar-user">
+        <div class="user-avatar">A</div>
+        <span>Administrator</span>
+      </div>
+    </header>
+
+    <section class="page-content">
+      <router-outlet />
+    </section>
+
+  </main>
+
+</div>

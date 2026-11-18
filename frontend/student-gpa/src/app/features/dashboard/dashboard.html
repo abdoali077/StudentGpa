@@ -1,0 +1,103 @@
+
+<div class="page-heading mb-4">
+  <div>
+    <h3>Dashboard</h3>
+    <p class="text-secondary mb-0">
+      Welcome to Student GPA Management System
+    </p>
+  </div>
+</div>
+
+@if (errorMessage) {
+  <div class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+}
+
+<div class="row g-4">
+
+  <!-- Total Students -->
+  <div class="col-12 col-sm-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon students">
+        <i class="bi bi-people"></i>
+      </div>
+      <div>
+        <p>Total Students</p>
+        <h3>{{ loading ? '...' : totalStudents }}</h3>
+        <small>Registered students</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total Courses -->
+  <div class="col-12 col-sm-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon courses">
+        <i class="bi bi-book"></i>
+      </div>
+      <div>
+        <p>Total Courses</p>
+        <h3>{{ loading ? '...' : totalCourses }}</h3>
+        <small>Available courses</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total Semesters -->
+  <div class="col-12 col-sm-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon semesters">
+        <i class="bi bi-calendar3"></i>
+      </div>
+      <div>
+        <p>Total Semesters</p>
+        <h3>{{ loading ? '...' : totalSemesters }}</h3>
+        <small>Academic semesters</small>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
+
+<div class="row g-4 mt-2">
+
+  <div class="col-12 col-lg-8">
+    <div class="content-card">
+      <h5>System Overview</h5>
+      <p class="text-secondary">
+        Manage students, courses, semesters, enrollments and academic transcripts.
+      </p>
+      <div class="overview-icon">
+        <i class="bi bi-mortarboard"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <div class="content-card">
+      <h5>Quick Actions</h5>
+
+      <a routerLink="/students" class="quick-action">
+        <i class="bi bi-person-plus"></i>
+        Manage Students
+        <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <a routerLink="/courses" class="quick-action">
+        <i class="bi bi-book"></i>
+        Manage Courses
+        <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <a routerLink="/enrollments" class="quick-action">
+        <i class="bi bi-journal-plus"></i>
+        Create Enrollment
+        <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
